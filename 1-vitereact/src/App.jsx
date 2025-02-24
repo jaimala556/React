@@ -21,6 +21,8 @@ const App = () => {
 
   return (
     <div className={`w-full min-h-screen ${colors[color]}`} >
+
+      
       <h1 className="text-3xl font-bold underline text-blue-500 w-3">Hello world!</h1>
       <button onClick={() => setColor(getRandomNumber())} type="button" className="bg-sky-400 hover:bg-sky-500 rounded-md p-2 text-white transition-all ">click here</button>
     </div>
