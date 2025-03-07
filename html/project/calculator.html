@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+
+    <div id="calculator-main">
+      <div id="calculator">
+        <input type="text" id="display-container" />
+        <div id="button-container">
+          <button
+            class="button"
+            onclick="containervalue = '';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            c
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '1';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            1
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '2';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            2
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '+';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            +
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '3';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            3
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '4';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            4
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '-';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            -
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '5';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            5
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '6';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            6
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '*';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            *
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '7';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            7
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '8';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            8
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '/';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            /
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =eval(containervalue);
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            =
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '9';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            9
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '0';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            0
+          </button>
+          <button
+            class="button"
+            onclick="containervalue =containervalue + '.';
+        document.querySelector('#display-container').value=containervalue;
+        "
+          >
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

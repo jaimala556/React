@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .add {
+        color: black;
+        background-color: rgb(168, 250, 168);
+        border-radius: 12px;
+        padding: 5px 17px;
+        border: none;
+      }
+      .wish {
+        border-radius: 12px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+      }
+      .sale {
+        color: black;
+        background-color: rgb(168, 250, 168);
+        border-radius: 12px;
+        padding: 5px 17px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="add"
+      onclick="cartQuantity ++   ; document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`"
+    >
+      Add to Bag
+    </button>
+    <button
+      class="wish"
+      onclick="cartQuantity --; document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`"
+    >
+      Move to wishlist
+    </button>
+    <button
+      class="sale"
+      onclick="cartQuantity +=2; document.querySelector('#cart-summary').innerText=`Your bag has ${cartQuantity} items`"
+    >
+      Add 1+1 sale item
+    </button>
+    <h1 id="cart-summary"></h1>
+    <script src="myntraexercise.js">
+    </script>
+  </body>
+</html>
